@@ -1,0 +1,20 @@
+name: astrox
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python
+- numpy
+- jupyter
+- notebook
+- matplotlib
+- scikit-learn
+- scipy
+- pandas
+- seaborn
+- statsmodels
+- jupyter_contrib_nbextensions
+- yellowbrick
+- astropy
+
+prefix: /home/ubunsam/miniconda3/envs/astrox
