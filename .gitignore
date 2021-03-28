@@ -1,3 +1,5 @@
 data/
 cluster_data/
 slides/
+.ipynb_checkpoints/
+.vscode/
