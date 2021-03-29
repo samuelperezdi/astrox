@@ -8,7 +8,7 @@
 #### _Co-Advisor: Alexander Caicedo Dorado_ - Universidad del Rosario
 
 ---
-![](img/observable.png)
+![](astrox_km6_src.png)
 
 ---
 ## The Chandra Observatory
