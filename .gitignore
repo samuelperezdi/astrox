@@ -1,5 +1,14 @@
-data/
-cluster_data/
+# All data files, large
+**/*.csv
+**/*.vot
+**/*.fits
+**/*.fit
+
+# Other not important stuff
 slides/
 .ipynb_checkpoints/
 .vscode/
+
+
+# Report folders
+./gmm/report22042021
