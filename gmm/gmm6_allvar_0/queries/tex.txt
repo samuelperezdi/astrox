@@ -1,0 +1,17 @@
+\begin{tabular}{lr}
+\toprule
+{} &  size \\
+main\_type &       \\
+\midrule
+NaN       &   124 \\
+Seyfert\_2 &    98 \\
+X         &    89 \\
+PartofG   &    45 \\
+Pulsar    &    40 \\
+Radio     &    40 \\
+YSO       &    39 \\
+QSO       &    35 \\
+HMXB      &    35 \\
+Star      &    33 \\
+\bottomrule
+\end{tabular}
