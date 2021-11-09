@@ -1,5 +1,6 @@
 # All data files, large
-**/*.csv
+./k-means/**/*.csv
+./gmm/**/*.csv
 **/*.vot
 **/*.fits
 **/*.fit
@@ -12,3 +13,7 @@ slides/
 
 # Report folders
 ./gmm/report22042021
+
+# Experiments
+
+./experiments/*
