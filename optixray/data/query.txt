@@ -1,0 +1,9 @@
+SELECT ALL
+ ox.name, ox.obsid, ox.SDSSDR15_ID, p.objid,p.ra,p.dec,p.u,p.g,p.r,p.i,p.z,
+ p.run, p.rerun, p.camcol, p.field,
+ s.specobjid, s.class, s.z as redshift,
+ s.plate, s.mjd, s.fiberid into mydb.optixray_finally from PhotoObj AS p
+RIGHT JOIN
+  mydb.optixray as ox
+  ON ox.SDSSDR15_ID = p.objid
+LEFT JOIN SpecObj AS s ON s.bestobjid = ox.SDSSDR15_ID
