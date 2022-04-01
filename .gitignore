@@ -1,6 +1,5 @@
 # All data files, large
-./k-means/**/*.csv
-./gmm/**/*.csv
+**/*.csv
 **/*.vot
 **/*.fits
 **/*.fit
@@ -17,3 +16,6 @@ slides/
 # Experiments
 
 ./experiments
+
+# But not these files
+!tables/*
