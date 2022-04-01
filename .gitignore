@@ -9,13 +9,8 @@ slides/
 .ipynb_checkpoints/
 .vscode/
 
-
-# Report folders
-./gmm/report22042021
-
 # Experiments
-
-./experiments
+experiments/*
 
 # But not these files
 !tables/*
