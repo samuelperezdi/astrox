@@ -105,7 +105,7 @@ def mahalanobis(x=None, data=None, pseudo=False):
     '''
     data = data.astype(float)
     x = x.astype(float)
-    x_mean_subs = x - np.mean(data)
+    x_mean_subs = x - np.mean(data, axis=0)
     
     cov = np.cov(data.values.T)
 
@@ -199,7 +199,8 @@ def mahal_classifier_validation(X_train, X_test, features, ltypes, uks=[], singu
         print(f'***Cluster {cl_i}***')
         X_train_cl = X_train[X_train.cluster == cl_i]
         X_test_cl = X_test[X_test.cluster == cl_i]
-        test_cl_class = mahal_classifier_cl(pd.concat([X_train_cl, X_test_cl]), features, ltypes, uks, singular_out_mode)
+        X_cl_concat = pd.concat([X_train_cl, X_test_cl])
+        test_cl_class = mahal_classifier_cl(cl=X_cl_concat, cl_raw=X_cl_concat, features=features, ltypes=ltypes, uks=uks, singular_out_mode=singular_out_mode)
         pred_class.append(test_cl_class)
         
     pred_class_df = pd.concat(pred_class)
